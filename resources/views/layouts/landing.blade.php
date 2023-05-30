@@ -160,12 +160,12 @@
                     project for free.
                 </p>
                 <div class="my-4 wow animate__fadeInLeft" data-wow-delay="0.8s">
-                    <a href="{{ route('login') }}" class="btn btn-light me-2"
-                    ><i class="far fa-eye me-2"></i>Live Demo</a
-                    >
-                    <a href="https://codecanyon.net/item/erpgo-saas-all-in-one-business-erp-with-project-account-hrm-crm/33263426" class="btn btn-outline-light" target="_blank"
-                    ><i class="fas fa-shopping-cart me-2"></i>Buy now</a
-                    >
+{{--                    <a href="{{ route('login') }}" class="btn btn-light me-2"--}}
+{{--                    ><i class="far fa-eye me-2"></i>Live Demo</a--}}
+{{--                    >--}}
+{{--                    <a href="https://codecanyon.net/item/erpgo-saas-all-in-one-business-erp-with-project-account-hrm-crm/33263426" class="btn btn-outline-light" target="_blank"--}}
+{{--                    ><i class="fas fa-shopping-cart me-2"></i>Buy now</a--}}
+{{--                    >--}}
                 </div>
             </div>
             <div class="col-sm-5">
