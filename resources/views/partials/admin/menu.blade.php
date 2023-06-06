@@ -527,9 +527,11 @@
                                         </li>
                                     @endif
 
+{{--                                    @if(Gate::check('manage vender'))--}}
                                             <li >
                                                 <a class="dash-link" href="{{ route('resell.index') }}">{{__('resellsimport')}}</a>
                                             </li>
+{{--                                    @endif--}}
 
 
                                     @if(Gate::check('manage vender'))
