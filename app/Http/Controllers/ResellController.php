@@ -101,7 +101,7 @@ class ResellController extends Controller
     }
     public function import(Request $request)
     {
-        dd('salam');
+
 
         $rules = [
             'file' => 'required|mimes:csv,txt',
@@ -124,7 +124,7 @@ class ResellController extends Controller
         {
             $resell = $resells[$i];
 
-            $resellByEmail = Vender::where('email', $resell[2])->first();
+//            $resellByEmail = Vender::where('email', $resell[2])->first();
 
             if(!empty($resellByEmail))
             {
@@ -132,7 +132,7 @@ class ResellController extends Controller
             }
             else
             {
-                $resellData            = new Vender();
+                $resellData            = new Resell();
                 $resellData->resell_id = $this->venderNumber();
             }
 
