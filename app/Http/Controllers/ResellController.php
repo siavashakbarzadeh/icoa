@@ -18,7 +18,7 @@ class ResellController extends Controller
      */
     public function index()
     {
-        //
+        return view('resell.index');
     }
 
     /**
