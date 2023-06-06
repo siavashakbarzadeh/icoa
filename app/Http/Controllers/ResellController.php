@@ -27,7 +27,7 @@ class ResellController extends Controller
     {
         $customers = Customer::where('created_by', \Auth::user()->creatorId())->get();
 
-        return view('customer.index', compact('customers'));
+        return view('resell.index', compact('customers'));
     }
 
     /**
