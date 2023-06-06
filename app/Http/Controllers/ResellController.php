@@ -5,6 +5,9 @@ namespace App\Http\Controllers;
 use App\Models\Resell;
 use App\Http\Requests\StoreResellRequest;
 use App\Http\Requests\UpdateResellRequest;
+use App\Imports\ResellsImport;
+use Illuminate\Http\Request;
+use Maatwebsite\Excel\Facades\Excel;
 
 class ResellController extends Controller
 {
@@ -82,5 +85,13 @@ class ResellController extends Controller
     public function destroy(Resell $resell)
     {
         //
+    }
+    public function import(Request $request)
+    {
+        $file = $request->file('file');
+
+        Excel::import(new ResellsImport, $file);
+
+        return redirect()->back()->with('success', 'CSV imported successfully.');
     }
 }
