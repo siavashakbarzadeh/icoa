@@ -1192,6 +1192,7 @@
     "Image Screenshot Take Interval time ( 1 = 1 min)": "Image Screenshot Take Interval time ( 1 = 1 min)",
     "Import": "Import",
     "Import customer CSV file": "Import customer CSV file",
+    "Import resell CSV file": "Import resell CSV file",
     "Import employee CSV file": "Import employee CSV file",
     "Import product CSV file": "Import product CSV file",
     "In": "In",
