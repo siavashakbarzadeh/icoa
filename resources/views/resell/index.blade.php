@@ -20,10 +20,10 @@ $profile=\App\Models\Utility::get_file('uploads/avatar/');
 @section('page-title')
     {{__('Manage Resells')}}
 @endsection
-@section('breadcrumb')
-    <li class="breadcrumb-item"><a href="{{route('dashboard')}}">{{__('Dashboard')}}</a></li>
-    <li class="breadcrumb-item">{{__('Resell')}}</li>
-@endsection
+{{--@section('breadcrumb')--}}
+{{--    <li class="breadcrumb-item"><a href="{{route('dashboard')}}">{{__('Dashboard')}}</a></li>--}}
+{{--    <li class="breadcrumb-item">{{__('Resell')}}</li>--}}
+{{--@endsection--}}
 
 @section('action-btn')
     <div class="float-end">
