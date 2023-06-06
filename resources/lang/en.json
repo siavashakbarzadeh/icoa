@@ -2779,5 +2779,22 @@
     "Zoom API Secret": "Zoom API Secret",
     "Zoom Meeting": "Zoom Meeting",
     "Zoom Meeting successfully created.": "Zoom Meeting successfully created.",
-    "Zoom Settings": "Zoom Settings"
+    "Zoom Settings": "Zoom Settings",
+    "billing_acount_name": "billing acount name",
+    "billing_acount_id": "billing acount id",
+    "project_name": "project_name",
+    "project_id":"project_id",
+    "project_hierarchy": "project_hierarchy",
+    "Service_description":"Service_description",
+    "Service_ID": "Service_ID",
+    "SKU_description":"SKU_description",
+    "SKU_ID": "SKU_ID",
+    "Credit_type":"Credit_type",
+    "Cost_type": "Cost_type",
+    "Usage_start_date":"Usage_start_date",
+    "Usage_end_date": "Usage_end_date",
+    "Usage_amount":"Usage_amount",
+    "Usage_unit": "Usage_unit",
+    "Unrounded_cost":"Unrounded_cost",
+    "Cost": "Cost"
 }

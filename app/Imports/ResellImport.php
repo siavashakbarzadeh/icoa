@@ -1,15 +1,39 @@
 <?php
-
 namespace App\Imports;
-
-use Maatwebsite\Excel\Concerns\Importable;
+use App\Models\Resell;
 use Maatwebsite\Excel\Concerns\ToModel;
-
-class ResellImport implements ToModel
+use Maatwebsite\Excel\Concerns\WithHeadingRow;
+use Hash;
+class ResellImport implements ToModel, WithHeadingRow
 {
-    use Importable;
-
+    /**
+     * @param array $row
+     *
+     * @return \Illuminate\Database\Eloquent\Model|null
+     */
     public function model(array $row)
     {
+        dd($row[0]);
+//        return new Resell([
+//
+////            'email'    => $row['email'],
+////            'password' => Hash::make($row['password']),
+//        ]);
     }
 }
+
+//class ResellImport implements ToModel
+//{
+//    use Importable;
+//
+//    public function model(array $row)
+//
+//    {
+//
+//        return new Resell([
+//            'id'     => $row['id'],
+////            'email'    => $row['billing_acount_id'],
+////            'password' => Hash::make($row['password']),
+//        ]);
+//    }
+//}
