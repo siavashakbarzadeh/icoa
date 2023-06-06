@@ -188,6 +188,10 @@ dd('ok');
 
         return redirect()->back()->with($data['status'], $data['msg']);
     }
+    public function importFile()
+    {
+        return view('resell.import');
+    }
 //    public function import(Request $request)
 //    {
 //        $file = $request->file('file');
