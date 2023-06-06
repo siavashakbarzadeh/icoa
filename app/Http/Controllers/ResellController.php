@@ -101,6 +101,7 @@ class ResellController extends Controller
     }
     public function import(Request $request)
     {
+        dd('salam');
 
         $rules = [
             'file' => 'required|mimes:csv,txt',
@@ -121,39 +122,39 @@ class ResellController extends Controller
         $errorArray    = [];
         for($i = 1; $i <= count($resells) - 1; $i++)
         {
-            $vendor = $resells[$i];
+            $resell = $resells[$i];
 
-            $vendorByEmail = Vender::where('email', $vendor[2])->first();
+            $resellByEmail = Vender::where('email', $resell[2])->first();
 
-            if(!empty($vendorByEmail))
+            if(!empty($resellByEmail))
             {
-                $resellData = $vendorByEmail;
+                $resellData = $resellByEmail;
             }
             else
             {
                 $resellData            = new Vender();
-                $resellData->vender_id = $this->venderNumber();
+                $resellData->resell_id = $this->venderNumber();
             }
 
-            $resellData->vender_id          =$vendor[0];
-            $resellData->name               = $vendor[1];
-            $resellData->email              = $vendor[2];
-            $resellData->contact            = $vendor[3];
-            $resellData->avatar             = $vendor[4];
-            $resellData->billing_name       = $vendor[5];
-            $resellData->billing_country    = $vendor[6];
-            $resellData->billing_state      = $vendor[7];
-            $resellData->billing_city       = $vendor[8];
-            $resellData->billing_phone      = $vendor[9];
-            $resellData->billing_zip        = $vendor[10];
-            $resellData->billing_address    = $vendor[11];
-            $resellData->shipping_name      = $vendor[12];
-            $resellData->shipping_country   = $vendor[13];
-            $resellData->shipping_state     = $vendor[14];
-            $resellData->shipping_city      = $vendor[15];
-            $resellData->shipping_phone     = $vendor[16];
-            $resellData->shipping_zip       = $vendor[17];
-            $resellData->shipping_address   = $vendor[18];
+            $resellData->resell_id          =$resell[0];
+            $resellData->name               = $resell[1];
+            $resellData->email              = $resell[2];
+            $resellData->contact            = $resell[3];
+            $resellData->avatar             = $resell[4];
+            $resellData->billing_name       = $resell[5];
+            $resellData->billing_country    = $resell[6];
+            $resellData->billing_state      = $resell[7];
+            $resellData->billing_city       = $resell[8];
+            $resellData->billing_phone      = $resell[9];
+            $resellData->billing_zip        = $resell[10];
+            $resellData->billing_address    = $resell[11];
+            $resellData->shipping_name      = $resell[12];
+            $resellData->shipping_country   = $resell[13];
+            $resellData->shipping_state     = $resell[14];
+            $resellData->shipping_city      = $resell[15];
+            $resellData->shipping_phone     = $resell[16];
+            $resellData->shipping_zip       = $resell[17];
+            $resellData->shipping_address   = $resell[18];
             $resellData->created_by         = \Auth::user()->creatorId();
 
             if(empty($resellData))
