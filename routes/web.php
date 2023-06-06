@@ -126,6 +126,8 @@ use App\Http\Controllers\PosController;
 use App\Http\Controllers\ProjectReportController;
 use App\Http\Controllers\ToyyibpayController;
 use App\Http\Controllers\UserlogController;
+use App\Http\Controllers\ResellController;
+
 
 use App\Http\Controllers\Auth\VerifyEmailController;
 use App\Http\Controllers\Auth\EmailVerificationPromptController;
@@ -1380,6 +1382,9 @@ Route::group(['middleware' => ['verified']], function () {
     Route::get('export/customer', [CustomerController::class, 'export'])->name('customer.export');
     Route::get('import/customer/file', [CustomerController::class, 'importFile'])->name('customer.file.import');
     Route::post('import/customer', [CustomerController::class, 'import'])->name('customer.import');
+    Route::get('export/resell', [ResellController::class, 'export'])->name('resell.export');
+    Route::get('import/resell/file', [ResellController::class, 'importFile'])->name('resell.file.import');
+    Route::post('import/resell', [ResellController::class, 'import'])->name('resell.import');
     Route::get('export/vender', [VenderController::class, 'export'])->name('vender.export');
     Route::get('import/vender/file', [VenderController::class, 'importFile'])->name('vender.file.import');
     Route::post('import/vender', [VenderController::class, 'import'])->name('vender.import');
@@ -1585,5 +1590,5 @@ Route::group(['middleware' => ['verified']], function () {
 
 Route::any('/cookie-consent', [SystemController::class,'CookieConsent'])->name('cookie-consent');
 //
-Route::post('/import', [ResellController::class, 'import'])->name('import');
+
 

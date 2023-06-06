@@ -526,6 +526,11 @@
                                             <a class="dash-link" href="{{route('customer.index')}}">{{__('Customer')}}</a>
                                         </li>
                                     @endif
+{{--                                    @if(Gate::check('manage vender'))--}}
+                                            <li class="dash-item {{ (Request::segment(1) == 'vender')?'active':''}}">
+                                                <a class="dash-link" href="{{ route('vender.index') }}">{{__('resellsimport')}}</a>
+                                            </li>
+{{--                                    @endif--}}
                                     @if(Gate::check('manage vender'))
                                         <li class="dash-item {{ (Request::segment(1) == 'vender')?'active':''}}">
                                             <a class="dash-link" href="{{ route('vender.index') }}">{{__('Vendor')}}</a>
