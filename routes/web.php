@@ -1380,9 +1380,9 @@ Route::group(['middleware' => ['verified']], function () {
     Route::get('export/customer', [CustomerController::class, 'export'])->name('customer.export');
     Route::get('import/customer/file', [CustomerController::class, 'importFile'])->name('customer.file.import');
     Route::post('import/customer', [CustomerController::class, 'import'])->name('customer.import');
-    Route::get('export/customer', [CustomerController::class, 'export'])->name('customer.export');
-    Route::get('import/customer/file', [CustomerController::class, 'importFile'])->name('customer.file.import');
-    Route::post('import/customer', [CustomerController::class, 'import'])->name('customer.import');
+    Route::get('export/resell', [CustomerController::class, 'export'])->name('resell.export');
+    Route::get('import/resell/file', [CustomerController::class, 'importFile'])->name('resell.file.import');
+    Route::post('import/resell', [CustomerController::class, 'import'])->name('resell.import');
     Route::get('export/vender', [VenderController::class, 'export'])->name('vender.export');
     Route::get('import/vender/file', [VenderController::class, 'importFile'])->name('vender.file.import');
     Route::post('import/vender', [VenderController::class, 'import'])->name('vender.import');
