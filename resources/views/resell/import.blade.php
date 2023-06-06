@@ -1,9 +1,9 @@
-{{ Form::open(array('route' => array('customer.import'),'method'=>'post', 'enctype' => "multipart/form-data")) }}
+{{ Form::open(array('route' => array('resell.import'),'method'=>'post', 'enctype' => "multipart/form-data")) }}
 <div class="modal-body">
     <div class="row">
         <div class="col-md-12 mb-6">
-            {{Form::label('file',__('Download sample customer CSV file'),['class'=>'form-label'])}}
-            <a href="{{asset(Storage::url('uploads/sample')).'/sample-customer.csv'}}" class="btn btn-sm btn-primary">
+            {{Form::label('file',__('Download sample resell CSV file'),['class'=>'form-label'])}}
+            <a href="{{asset(Storage::url('uploads/sample')).'/sample-resell.csv'}}" class="btn btn-sm btn-primary">
                 <i class="ti ti-download"></i> {{__('Download')}}
             </a>
         </div>
