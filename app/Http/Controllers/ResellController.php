@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Customer;
 use App\Models\Resell;
 use App\Http\Requests\StoreResellRequest;
 use App\Http\Requests\UpdateResellRequest;
@@ -16,9 +17,17 @@ class ResellController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    public function dashboard()
+    {
+        $data['billChartData'] = \Auth::user()->billChartData();
+
+        return view('resell.dashboard', $data);
+    }
     public function index()
     {
-        return view('resell.index');
+        $customers = Customer::where('created_by', \Auth::user()->creatorId())->get();
+
+        return view('customer.index', compact('customers'));
     }
 
     /**

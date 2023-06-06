@@ -126,6 +126,7 @@ use App\Http\Controllers\PosController;
 use App\Http\Controllers\ProjectReportController;
 use App\Http\Controllers\ToyyibpayController;
 use App\Http\Controllers\UserlogController;
+use App\Http\Controllers\ResellController;
 
 use App\Http\Controllers\Auth\VerifyEmailController;
 use App\Http\Controllers\Auth\EmailVerificationPromptController;
@@ -390,6 +391,18 @@ Route::group(['middleware' => ['verified']], function () {
         ], function () {
         Route::get('vender/{id}/show', [VenderController::class, 'show'])->name('vender.show');
         Route::resource('vender', VenderController::class);
+    }
+    );
+    Route::group(
+        [
+            'middleware' => [
+                'auth',
+                'XSS',
+                'revalidate',
+            ],
+        ], function () {
+        Route::get('resell/{id}/show', [ResellController::class, 'show'])->name('resell.show');
+        Route::resource('resell', ResellController::class);
     }
     );
 
