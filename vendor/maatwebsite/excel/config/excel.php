@@ -48,8 +48,6 @@ return [
             'use_bom'                => false,
             'include_separator_line' => false,
             'excel_compatibility'    => false,
-            'output_encoding'        => '',
-            'test_auto_detect'       => true,
         ],
 
         /*
@@ -123,7 +121,7 @@ return [
         |
         */
         'csv'         => [
-            'delimiter'        => null,
+            'delimiter'        => ',',
             'enclosure'        => '"',
             'escape_character' => '\\',
             'contiguous'       => false,
@@ -220,7 +218,7 @@ return [
         | By default PhpSpreadsheet keeps all cell values in memory, however when
         | dealing with large files, this might result into memory issues. If you
         | want to mitigate that, you can configure a cell caching driver here.
-        | When using the illuminate driver, it will store each value in the
+        | When using the illuminate driver, it will store each value in a the
         | cache store. This can slow down the process, because it needs to
         | store each value. You can use the "batch" store if you want to
         | only persist to the store when the memory limit is reached.
@@ -278,9 +276,6 @@ return [
     */
     'transactions' => [
         'handler' => 'db',
-        'db'      => [
-            'connection' => null,
-        ],
     ],
 
     'temporary_files' => [
@@ -294,7 +289,7 @@ return [
         | storing reading or downloading. Here you can customize that path.
         |
         */
-        'local_path'          => storage_path('framework/cache/laravel-excel'),
+        'local_path'          => storage_path('framework/laravel-excel'),
 
         /*
         |--------------------------------------------------------------------------
