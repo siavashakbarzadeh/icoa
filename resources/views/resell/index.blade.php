@@ -18,7 +18,7 @@ $profile=\App\Models\Utility::get_file('uploads/avatar/');
     </script>
 @endpush
 @section('page-title')
-    {{__('Manage Customers')}}
+    {{__('Manage Resells')}}
 @endsection
 @section('breadcrumb')
     <li class="breadcrumb-item"><a href="{{route('dashboard')}}">{{__('Dashboard')}}</a></li>
