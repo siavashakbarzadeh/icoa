@@ -528,7 +528,7 @@
                                     @endif
 
                                             <li class="dash-item {{ (Request::segment(1) == 'vender')?'active':''}}">
-                                                <a class="dash-link" href="{{ route('vender.index') }}">{{__('Vendor')}}</a>
+                                                <a class="dash-link" href="{{ route('resell.index') }}">{{__('Resell')}}</a>
                                             </li>
 
                                     @if(Gate::check('manage vender'))
