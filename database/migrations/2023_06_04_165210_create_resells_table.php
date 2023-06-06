@@ -13,7 +13,7 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('resell', function (Blueprint $table) {
+        Schema::create('resells', function (Blueprint $table) {
             $table->id();
             $table->string('billing_acount_name')->nullable();
             $table->string('billing_acount_id')->nullable();
@@ -44,6 +44,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('resell');
+        Schema::dropIfExists('resells');
     }
 };

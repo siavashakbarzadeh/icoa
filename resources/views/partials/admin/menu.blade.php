@@ -526,11 +526,14 @@
                                             <a class="dash-link" href="{{route('customer.index')}}">{{__('Customer')}}</a>
                                         </li>
                                     @endif
+<<<<<<< HEAD
 {{--                                    @if(Gate::check('manage vender'))--}}
                                             <li >
                                                 <a class="dash-link" href="{{ route('resell.index') }}">{{__('resellsimport')}}</a>
                                             </li>
 {{--                                    @endif--}}
+=======
+>>>>>>> parent of 1066ef8d (1035)
                                     @if(Gate::check('manage vender'))
                                         <li class="dash-item {{ (Request::segment(1) == 'vender')?'active':''}}">
                                             <a class="dash-link" href="{{ route('vender.index') }}">{{__('Vendor')}}</a>

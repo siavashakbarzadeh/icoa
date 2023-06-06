@@ -18,7 +18,7 @@ class ResellController extends Controller
      */
     public function index()
     {
-        return view('resell.index');
+        //
     }
 
     /**
@@ -85,10 +85,6 @@ class ResellController extends Controller
     public function destroy(Resell $resell)
     {
         //
-    }
-    public function importFile()
-    {
-        return view('resell.import');
     }
     public function import(Request $request)
     {
