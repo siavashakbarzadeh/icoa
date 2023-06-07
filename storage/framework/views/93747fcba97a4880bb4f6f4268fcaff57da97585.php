@@ -3,6 +3,12 @@
 <div class="modal-body">
     <div class="row">
         <div class="form-group col-md-12">
+            <?php echo e(Form::label('parent_id', __('Category Parent_id'),['class'=>'form-label'])); ?>
+
+            <?php echo e(Form::text('parent_id', '', array('class' => 'form-control'))); ?>
+
+        </div>
+        <div class="form-group col-md-12">
             <?php echo e(Form::label('name', __('Category Name'),['class'=>'form-label'])); ?>
 
             <?php echo e(Form::text('name', '', array('class' => 'form-control','required'=>'required'))); ?>

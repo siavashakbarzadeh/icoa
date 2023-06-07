@@ -20,7 +20,8 @@ class CreateProductServiceCategoriesTable extends Migration
             $table->string('type')->default(0);
             $table->string('color')->default('#fc544b');
             $table->integer('created_by')->default('0');
-            $table->foreignId('parent_id')->references('id')->on('product_service_categories')->nullable();
+            $table->unsignedBigInteger('parent_id')->nullable();
+            $table->foreign('parent_id')->references('id')->on('product_service_categories');
             $table->timestamps();
         });
     }

@@ -68,6 +68,7 @@ class ProductServiceCategoryController extends Controller
             $category->name       = $request->name;
             $category->color      = $request->color;
             $category->type       = $request->type;
+            $category->parent_id       = $request->parent_id ;
             $category->created_by = \Auth::user()->creatorId();
             $category->save();
 
