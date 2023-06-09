@@ -29,6 +29,7 @@ class CreateUsersTable extends Migration
             $table->integer('default_pipeline')->nullable();
             $table->integer('delete_status')->default(1);
             $table->integer('is_active')->default(1);
+            $table->string('google_id')->nullable();
             $table->rememberToken();
             $table->timestamps();
         }

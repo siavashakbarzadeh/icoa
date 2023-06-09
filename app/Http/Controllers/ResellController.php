@@ -29,7 +29,10 @@ class ResellController extends Controller
     }
     public function index()
     {
-        $resells = Resell::where("Cost_type","!=","Tax")->where("Credit_type","!=","RESELLER_MARGIN")->get();
+        $resells = Resell::all()->where("Credit_type","!=","RESELLER_MARGIN" )->where("Cost_type","!=","Tax");
+//        $resells = Resell::whereNot("Cost_type","TAX")->get();
+//        $resells=$resell1->orhere("Credit_type","!=","RESELLER_MARGIN")->get();
+//            where("Credit_type","!=","\RESELLER_MARGIN")->get();
 
         return view('resell.index', compact('resells'));
     }
