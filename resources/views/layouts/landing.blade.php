@@ -147,7 +147,7 @@
                     class="text-white mb-sm-4 wow animate__fadeInLeft"
                     data-wow-delay="0.2s"
                 >
-                    {{__('ERPGo SaaS')}}
+                    ICOA
                 </h1>
                 <h2
                     class="text-white mb-sm-4 wow animate__fadeInLeft"
@@ -160,12 +160,7 @@
                     project for free.
                 </p>
                 <div class="my-4 wow animate__fadeInLeft" data-wow-delay="0.8s">
-                    <a href="{{ route('login') }}" class="btn btn-light me-2"
-                    ><i class="far fa-eye me-2"></i>Live Demo</a
-                    >
-                    <a href="https://codecanyon.net/item/erpgo-saas-all-in-one-business-erp-with-project-account-hrm-crm/33263426" class="btn btn-outline-light" target="_blank"
-                    ><i class="fas fa-shopping-cart me-2"></i>Buy now</a
-                    >
+
                 </div>
             </div>
             <div class="col-sm-5">
@@ -179,161 +174,7 @@
         </div>
     </div>
 </header>
-<!-- [ Header ] End -->
-<!-- [ client ] Start -->
-<section id="dashboard" class="theme-alt-bg dashboard-block">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-xl-6 col-md-9 title">
-                <h2><span>Happy clients use Dashboard</span> </h2>
-            </div>
-        </div>
-        <div class="row align-items-center justify-content-center mobile-screen dashboard_images">
-            <div class="col-lg-2">
-                <div class="wow animate__fadeInRight mobile-widget" data-wow-delay="0.2s">
 
-                    @if($mode_setting['cust_darklayout'] && $mode_setting['cust_darklayout'] == 'on' )
-
-                        <img src="{{ $logo . '/' . (isset($company_logos) && !empty($company_logos) ? $company_logos : 'logo-dark.png') }}"
-                             alt="" class="img-fluid ">
-                    @else
-
-                        <img src="{{ $logo . '/' . (isset($company_logo) && !empty($company_logo) ? $company_logo : 'logo-dark.png') }}"
-                             alt="" class="img-fluid">
-                    @endif
-
-
-                </div>
-            </div>
-            <div class="col-lg-2">
-                <div class="wow animate__fadeInRight mobile-widget" data-wow-delay="0.4s">
-                    @if($mode_setting['cust_darklayout'] && $mode_setting['cust_darklayout'] == 'on' )
-
-                        <img src="{{ $logo . '/' . (isset($company_logos) && !empty($company_logos) ? $company_logos : 'logo-dark.png') }}"
-                             alt="" class="img-fluid ">
-                    @else
-
-                        <img src="{{ $logo . '/' . (isset($company_logo) && !empty($company_logo) ? $company_logo : 'logo-dark.png') }}"
-                             alt="" class="img-fluid">
-                    @endif
-                </div>
-            </div>
-            <div class="col-lg-2">
-                <div class="wow animate__fadeInRight mobile-widget" data-wow-delay="0.6s">
-                    @if($mode_setting['cust_darklayout'] && $mode_setting['cust_darklayout'] == 'on' )
-
-                        <img src="{{ $logo . '/' . (isset($company_logos) && !empty($company_logos) ? $company_logos : 'logo-dark.png') }}"
-                             alt="" class="img-fluid ">
-                    @else
-
-                        <img src="{{ $logo . '/' . (isset($company_logo) && !empty($company_logo) ? $company_logo : 'logo-dark.png') }}"
-                             alt="" class="img-fluid">
-                    @endif
-                </div>
-            </div>
-            <div class="col-lg-2">
-                <div class="wow animate__fadeInRight mobile-widget" data-wow-delay="0.8s">
-                    @if($mode_setting['cust_darklayout'] && $mode_setting['cust_darklayout'] == 'on' )
-
-                        <img src="{{ $logo . '/' . (isset($company_logos) && !empty($company_logos) ? $company_logos : 'logo-dark.png') }}"
-                             alt="" class="img-fluid ">
-                    @else
-
-                        <img src="{{ $logo . '/' . (isset($company_logo) && !empty($company_logo) ? $company_logo : 'logo-dark.png') }}"
-                             alt="" class="img-fluid">
-                    @endif
-                </div>
-            </div>
-            <div class="col-lg-2">
-                <div class="wow animate__fadeInRight mobile-widget" data-wow-delay="1s">
-                    @if($mode_setting['cust_darklayout'] && $mode_setting['cust_darklayout'] == 'on' )
-
-                        <img src="{{ $logo . '/' . (isset($company_logos) && !empty($company_logos) ? $company_logos : 'logo-dark.png') }}"
-                             alt="" class="img-fluid">
-                    @else
-
-                        <img src="{{ $logo . '/' . (isset($company_logo) && !empty($company_logo) ? $company_logo : 'logo-dark.png') }}"
-                             alt="" class="img-fluid">
-                    @endif
-                </div>
-            </div>
-        </div>
-        <img
-            src="{{asset('landing/images/dashboard.png')}}"
-            alt=""
-            class="img-fluid img-dashboard wow animate__fadeInUp mt-5"  style='border-radius: 15px;'
-            data-wow-delay="0.2s"
-        />
-    </div>
-</section>
-<!-- [ client ] End -->
-<!-- [ dashboard ] start -->
-<section id="dashboard" class="theme-alt-bg dashboard-block">
-    <div class="container">
-        <div class="row align-items-center justify-content-end mb-5">
-            <div class="col-sm-4">
-                <h1
-                    class="mb-sm-4 f-w-600 wow animate__fadeInLeft"
-                    data-wow-delay="0.2s"
-                >
-                    {{__('ERPGo SaaS')}}
-                </h1>
-                <h2 class="mb-sm-4 wow animate__fadeInLeft" data-wow-delay="0.4s">
-                    {{__(' All In One Business ERP With Project, Account, HRM, CRM')}}
-                </h2>
-                <p class="mb-sm-4 wow animate__fadeInLeft" data-wow-delay="0.6s">
-                    Use these awesome forms to login or create new account in your
-                    project for free.
-                </p>
-                <div class="my-4 wow animate__fadeInLeft" data-wow-delay="0.8s">
-                    <a href="#" class="btn btn-primary" target="_blank"
-                    ><i class="fas fa-shopping-cart me-2"></i>Buy now</a
-                    >
-                </div>
-            </div>
-            <div class="col-sm-6">
-                <img
-                    src="{{asset('landing/images/dashboard.png')}}"
-                    alt="Datta Able Admin Template"
-                    class="img-fluid header-img wow animate__fadeInRight"
-                    data-wow-delay="0.2s"
-                />
-            </div>
-        </div>
-        <div class="row align-items-center justify-content-start">
-            <div class="col-sm-6">
-                <img
-                    src="{{asset('assets/images/front/img-crm-dash-2.svg')}}"
-                    alt="Datta Able Admin Template"
-                    class="img-fluid header-img wow animate__fadeInLeft"
-                    data-wow-delay="0.2s"
-                />
-            </div>
-            <div class="col-sm-4">
-                <h1
-                    class="mb-sm-4 f-w-600 wow animate__fadeInRight"
-                    data-wow-delay="0.2s"
-                >
-                    {{__('ERPGo SaaS')}}
-                </h1>
-                <h2 class="mb-sm-4 wow animate__fadeInRight" data-wow-delay="0.4s">
-                    {{__('All In One Business ERP With Project, Account, HRM, CRM')}}
-                </h2>
-                <p class="mb-sm-4 wow animate__fadeInRight" data-wow-delay="0.6s">
-                    Use these awesome forms to login or create new account in your
-                    project for free.
-                </p>
-                <div class="my-4 wow animate__fadeInRight" data-wow-delay="0.8s">
-                    <a href="#" class="btn btn-primary" target="_blank"
-                    ><i class="fas fa-shopping-cart me-2"></i>Buy now</a
-                    >
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- [ dashboard ] End -->
-<!-- [ feature ] start -->
 <section id="feature" class="feature">
     <div class="container">
         <div class="row justify-content-center">
@@ -837,103 +678,7 @@
     </div>
 </section>
 <!-- [ faq ] End -->
-<!-- [ dashboard ] start -->
-<section class="side-feature">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-sm-3">
-                <h1
-                    class="mb-sm-4 f-w-600 wow animate__fadeInLeft"
-                    data-wow-delay="0.2s"
-                >
-                    {{__('ERPGo SaaS')}}
-                </h1>
-                <h2 class="mb-sm-4 wow animate__fadeInLeft" data-wow-delay="0.4s">
-                    {{__('All In One Business ERP With Project, Account, HRM, CRM')}}
-                </h2>
-                <p class="mb-sm-4 wow animate__fadeInLeft" data-wow-delay="0.6s">
-                    Use these awesome forms to login or create new account in your
-                    project for free.
-                </p>
-                <div class="my-4 wow animate__fadeInLeft" data-wow-delay="0.8s">
-                    <a href="#" class="btn btn-primary" target="_blank"
-                    ><i class="fas fa-shopping-cart me-2"></i>Buy now</a
-                    >
-                </div>
-            </div>
-            <div class="col-sm-9">
-                <div class="row feature-img-row">
-                    <div class="col-3">
-                        <img
-                            src="{{asset('landing/images/dashboard.png')}}"
-                            class="img-fluid header-img wow animate__fadeInRight"
-                            data-wow-delay="0.2s"
-                            alt="Admin"
-                        />
-                    </div>
-                    <div class="col-3">
-                        <img
-                            src="{{asset('landing/images/dash-3.png')}}"
-                            class="img-fluid header-img wow animate__fadeInRight"
-                            data-wow-delay="0.4s"
-                            alt="Admin"
-                        />
-                    </div>
-                    <div class="col-3">
-                        <img
-                            src="{{asset('landing/images/dash-4.png')}}"
-                            class="img-fluid header-img wow animate__fadeInRight"
-                            data-wow-delay="0.6s"
-                            alt="Admin"
-                        />
-                    </div>
-                    <div class="col-3">
-                        <img
-                            src="{{asset('landing/images/dash-5.png')}}"
-                            class="img-fluid header-img wow animate__fadeInRight"
-                            data-wow-delay="0.8s"
-                            alt="Admin"
-                        />
-                    </div>
-                    <div class="col-3 mt-5">
-                        <img
-                            src="{{asset('landing/images/dash-6.png')}}"
-                            class="img-fluid header-img wow animate__fadeInRight"
-                            data-wow-delay="0.3s"
-                            alt="Admin"
-                        />
-                    </div>
-                    <div class="col-3 mt-5">
-                        <img
-                            src="{{asset('landing/images/dash-7.png')}}"
-                            class="img-fluid header-img wow animate__fadeInRight"
-                            data-wow-delay="0.5s"
-                            alt="Admin"
-                        />
-                    </div>
-                    <div class="col-3 mt-5">
-                        <img
-                            src="{{asset('landing/images/dash-8.png')}}"
-                            class="img-fluid header-img wow animate__fadeInRight"
-                            data-wow-delay="0.7s"
-                            alt="Admin"
-                        />
-                    </div>
-                    <div class="col-3 mt-5">
-                        <img
-                            src="{{asset('landing/images/dash-9.png')}}"
-                            class="img-fluid header-img wow animate__fadeInRight"
-                            data-wow-delay="0.9s"
-                            alt="Admin"
-                        />
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- [ dashboard ] End -->
-<!-- [ dashboard ] start -->
+
 <section class="footer">
     <div class="container">
         <div class="row">
