@@ -15,27 +15,28 @@ class Resell extends Model
 
     protected $guard_name = 'web';
     protected $fillable   = [
-            'id',
-            'billing_acount_name',
-            'billing_acount_id',
-            'project_name',
-            'project_id',
-            'project_hierarchy',
-            'Service_description',
-            'Service_ID',
-            'SKU_description',
-            'SKU_ID',
-            'Credit_type',
-            'Cost_type',
-            'Usage_start_date',
-            'Usage_end_date',
-            'Usage_amount',
-            'Usage_unit',
-            'Unrounded_cost',
-            'Cost',
+        'id',
+        'billing_acount_name',
+//        'email',
+//        'password',
+//        'contact',
+//        'avatar',
+//        'is_active',
+//        'created_by',
+//        'email_verified_at',
+//        'billing_name',
+//        'billing_country',
+//        'billing_state',
+//        'billing_city',
+//        'billing_phone',
+//        'billing_zip',
+//        'billing_address',
+//        'shipping_name',
+//        'shipping_country',
+//        'shipping_state',
+//        'shipping_city',
+//        'shipping_phone',
+//        'shipping_zip',
+//        'shipping_address',
     ];
-
-    public static function Where(string $string)
-    {
-    }
 }
